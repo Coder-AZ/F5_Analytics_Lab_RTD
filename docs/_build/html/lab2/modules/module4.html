@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<head>
+  
+  <!--STAGING:-->
+  <script src="https://assets.adobedtm.com/50164577268f481934e5d57dbfb78f929164cd0d/satelliteLib-ea775cfabef5fca8b04e9392f20c986c0724a7c3-staging.js"></script>
+  <!--Production:-->
+  <script src="https://assets.adobedtm.com/50164577268f481934e5d57dbfb78f929164cd0d/satelliteLib-ea775cfabef5fca8b04e9392f20c986c0724a7c3.js"></script>
+    <title>3.4. Viewing the Analytics Data in Splunk</title>
+  
+
+  <meta charset="utf-8">
+  <!-- Twitter Bootstrap viewport setting -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- F5 metadata -->
+  <meta name="kb_doc_type" content="Manual"/>
+  <meta name="kb_doc_type" content="User Guide"/>
+  <meta name="title" content="3.4. Viewing the Analytics Data in Splunk"/>
+  <meta name="product" content="F5 Analytics"/>
+  <meta name="version" content=""/>
+  <meta name="updated_date"  content="None"/>
+  <meta name="archived" content="Archived documents excluded"/>
+
+  
+  
+  
+  <link href="https://cdn.f5.com/favicon.ico" rel="icon">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text"> jQuery.noConflict(true)</script>
+
+</head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>3.4. Viewing the Analytics Data in Splunk &#8212; F5 Analytics  documentation</title>
+    <link rel="stylesheet" href="../../_static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/f5_agility_theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/f5.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/f5-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/21fb8a09c3.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="3.3. Notes on the F5/Splunk Integration" href="module3.html" />
+  </head><body>
+  <div id="clouddocs-header"></div>
+
+    <div id="dismiss">
+      <button type="button" class="btn btn-info navbar-btn site-hidden"><i class="fa fa-align-justify"></i></button>
+    </div>
+    <div id="sidebar" class="section-nav">
+      <nav class="nav-sidebartoc">
+        <h5>F5 Analytics  documentation </h5>
+<div id="searchbox" role="search">
+  <form class="search" action="../../search.html" method="get">
+    <input type="text" class="search" name="q" placeholder=" Search..." />
+    <button type="submit" class="btn btn-info navbar-btn"><i class="fa fa-search"></i></button>
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        <hr>
+        <h5>Current Page</h5>
+        <span class="nav-sidebartoc">
+            <ul>
+<li><a class="reference internal" href="#">3.4. Viewing the Analytics Data in Splunk</a><ul>
+<li><a class="reference internal" href="#task-3-visualize-the-analytics-data-in-splunk">3.4.1. Task 3: Visualize the analytics data in Splunk</a></li>
+</ul>
+</li>
+</ul>
+
+         </span>
+        <hr>
+        <h5>Site Contents</h5>
+        <span class="nav-sidebartoc">
+            <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lab1/lab1.html">2. Lab 1 - Introduction to AVR</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../lab2.html">3. Lab 2: Integration with Splunk</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="module1.html">3.1. Configuring Splunk to use the F5 Splunk app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module2.html">3.2. Configuring the BIG-IP to send analytics data to Splunk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module3.html">3.3. Notes on the F5/Splunk Integration</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3.4. Viewing the Analytics Data in Splunk</a></li>
+</ul>
+</li>
+</ul>
+
+        </span><!-- Use this file to add extra links to the bottom of the ToC sidebar -->
+<hr>
+  <span class="nav-sidebartoc">
+ <!-- insert content here -->
+  </span>
+      </nav>
+    </div>
+
+  
+  <div class="main active" id="content">
+    <article class="docs-container site-article-inner">
+            <nav class="site-breadcrumb-nav site-nav">
+          <ul class="site-breadcrumb-list">
+            <li class="breadcrumb-item"><button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn site-hidden"><i class="fa fa-align-justify"></i></button>&#x20 <a href="/">Community Training Classes &amp; Labs</a> &gt; <a href="../../index.html">F5 Analytics </a> &gt; 3.4. Viewing the Analytics Data in Splunk</li>
+          </ul>
+      </nav>
+      
+      
+
+    
+  <div class="section" id="viewing-the-analytics-data-in-splunk">
+<h1>3.4. Viewing the Analytics Data in Splunk<a class="headerlink" href="#viewing-the-analytics-data-in-splunk" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="task-3-visualize-the-analytics-data-in-splunk">
+<h2>3.4.1. Task 3: Visualize the analytics data in Splunk<a class="headerlink" href="#task-3-visualize-the-analytics-data-in-splunk" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">In your Chrome browser window, open a new tab, and click on the <strong>Splunk</strong>
+bookmark to launch the Splunk Web UI</p>
+</li>
+<li><p class="first">In Splunk, click on the F5 Networks app on the left to launch the F5 Splunk
+app</p>
+<p><img alt="image38" src="../../_images/image38.png" /></p>
+</li>
+<li><p class="first">On the Home tab of the F5 Splunk app, change the Time pull-down to
+<strong>Last 60 minutes</strong></p>
+<p><img alt="image39" src="../../_images/image39.png" /></p>
+</li>
+<li><p class="first">Note that some of the widgets like <strong>Non-Responding Hosts</strong> or
+<strong>Expiring SSL Certificates</strong> may show <strong>No results found</strong>. This is
+because there is nothing to report for these metrics in this lab
+environment.</p>
+</li>
+<li><p class="first">Scroll down to view other widgets. You may find that your BIG-IP
+devices are shown under the <strong>Unhealthy Devices</strong> and/or some
+applications are shown in the <strong>Unhealthy Applications.</strong> Let’s
+investigate:</p>
+<p><img alt="image40" src="../../_images/image40.png" /></p>
+</li>
+<li><p class="first">Click on the <strong>F5_SJC_Cluster</strong> device group under <strong>Unhealthy
+Devices.</strong> This will open a new browser tab and take you to the
+<strong>Device Cluster Drilldown</strong> dashboard. Here you can see a number of
+different metrics that contribute to the overall device health score.</p>
+<p><img alt="image41" src="../../_images/image41.png" /></p>
+</li>
+<li><p class="first">Just under the <strong>Overview</strong> table showing the scores on different
+metrics, you can also see a table showing the <strong>Device Status</strong>, with
+details on the devices included in the group</p>
+<p><img alt="image42" src="../../_images/image42.png" /></p>
+</li>
+<li><p class="first">If your devices had any error conditions that generated some
+Diagnostic information, you could see that in the <strong>Diagnostics</strong>
+section.</p>
+</li>
+<li><p class="first">Now click on the <strong>System Performance</strong> tab. This will show you
+details on the CPU and Memory usage of your BIG-IP devices, including
+a breakdown of processes consuming the most amount of CPU or memory</p>
+<p><img alt="image43" src="../../_images/image43.png" /></p>
+</li>
+<li><p class="first">Next, click on <strong>Interface Status &amp; Statistics</strong>. This will show you
+detailed Interface and VLAN stats. You can change the options in the
+pull-down menus to view different information.</p>
+<p><img alt="image44" src="../../_images/image44.png" /></p>
+</li>
+<li><p class="first">Next, click on the <strong>Events</strong> tab. This tab shows you Syslog events,
+with a time-chart of when different kinds of events occurred. If you
+see any colored squares in the bigip.syslog.pool.statechange syslog
+table, click on those squares. If you then scroll down, you will see
+the actual syslog messages from whatever was happening at that time</p>
+<p><img alt="image45" src="../../_images/image45.png" /></p>
+</li>
+<li><p class="first">Feel free to explore the other tabs as well to view additional information</p>
+</li>
+<li><p class="first">Now, let us look at our applications to view more details about them.
+In the red menu bar at the top, click on <strong>Application &gt; Application
+Dashboard.</strong></p>
+<p><img alt="image46" src="../../_images/image46.png" /></p>
+</li>
+<li><p class="first">This will show you a listing of all the applications across all your
+BIG-IPs, based on the application grouping and mappings that you
+defined in the f5.analytics iApp on the BIG-IP. In our case, we just
+have a single application. Click on the <strong>F5_Demo_App</strong> application
+name to go into the <strong>Application Drilldown</strong> dashboard</p>
+<p><img alt="image47" src="../../_images/image47.png" /></p>
+</li>
+<li><p class="first">The Application Drilldown dashboard shows you a lot of detailed
+statistics about your application(s). You can view the various
+metrics for your application(s) on the <strong>Overview</strong> tab. To get more
+details, you can click the link for the View in Application Health
+Dashboard, which will give you even more detailed metrics and charts
+that are used in calculating the health scores for the various
+metrics:</p>
+<p><img alt="image48" src="../../_images/image48.png" /></p>
+</li>
+<li><p class="first">In the <strong>Application Health</strong> Dashboard that opens up in a new
+browser tab, you can view the various metrics as well as charts for
+those metrics that make up the overall Application Health score</p>
+</li>
+<li><p class="first">Now go back to the browser tab for the <strong>Application Drilldown</strong>
+dashboard, and then click on the <strong>Application Resources</strong> tab. This
+tab shows you various components that make up your applications,
+including the facility, virtual servers, pools, pool members, and
+even iRules. In our case, our <strong>F5_Demo</strong> application is hosted in a
+single Facility (<strong>F5 Lab</strong>), and is made up of 2 Virtual Servers:
+<strong>F5_Demo_HTTP_VS</strong> and <strong>F5_Demo_HTTPS_VS</strong>. Each virtual
+server has its own pool with their corresponding pool members. You
+can view details for all these components in the tables below.</p>
+</li>
+<li><p class="first">Next, click on the <strong>Traffic Overview, Latency, &amp; Analytics</strong> tab.
+This tab shows you detailed traffic-related stats, similar to the
+data available via the AVR charts and reports you saw in Lab 1.</p>
+</li>
+<li><p class="first">Next, click on the <strong>Client Visibility</strong> tab. This tab provides a lot
+of visibility into the traffic between the end-clients and the
+BIG-IP, including connection stats, throughput information, TCP
+stats, HTTP information (HTTP requests, HTTP version, HTTP
+compression info, etc.), SSL information (SSL throughput, SSL
+protocol info, ciphers, SSL renegotiations, etc.). Similarly, the
+<strong>Server Visibility</strong> tab provides similar information for the
+traffic between the BIG-IPs and the back-end application servers.</p>
+</li>
+<li><p class="first">The <strong>Pool Statistics</strong> tab provides details on the various pools and
+pool members across all the BIG-IPs and each application / virtual
+server on each BIG-IP.</p>
+</li>
+<li><p class="first">Feel free to explore other tabs including the <strong>System Performance</strong>
+and the <strong>Alerts and Logs</strong> tabs.</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This concludes all the lab steps for the Splunk Integration lab.  Feel
+free to explore other portions of the F5 Splunk app, or try out other
+settings in the f5.analytics iApp. Note that this lab environment does not
+include other F5 modules (DNS/GTM, ASM, or APM). However, if you have these
+other modules enabled on your BIG-IP devices in your own environment, you
+can view data for these modules as well in the F5 Splunk app.</p>
+</div>
+</div>
+</div>
+
+
+
+    
+     <div class="row next-prev-btn-row">
+       <div class="col-lg-12">
+       
+        <a href="module3.html" title="3.3. Notes on the F5/Splunk Integration" accesskey="p" class="btn btn-primary pull-left"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Previous</a>
+       
+       
+     </div>
+     </div>
+    
+
+    </article>
+  </div>
+
+</div>
+
+
+  <div id="clouddocs-footer"></div>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../../_static/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    jQuery.noConflict(true)
+  </script>
+  <script src="../../_static/js/clouddocs.js"></script>
+  </body>
+</html>
