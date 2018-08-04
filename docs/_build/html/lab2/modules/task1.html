@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<head>
+  
+  <!--STAGING:-->
+  <script src="https://assets.adobedtm.com/50164577268f481934e5d57dbfb78f929164cd0d/satelliteLib-ea775cfabef5fca8b04e9392f20c986c0724a7c3-staging.js"></script>
+  <!--Production:-->
+  <script src="https://assets.adobedtm.com/50164577268f481934e5d57dbfb78f929164cd0d/satelliteLib-ea775cfabef5fca8b04e9392f20c986c0724a7c3.js"></script>
+    <title>3.1.1. Task 1: Install the F5 Splunk app in Splunk</title>
+  
+
+  <meta charset="utf-8">
+  <!-- Twitter Bootstrap viewport setting -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- F5 metadata -->
+  <meta name="kb_doc_type" content="Manual"/>
+  <meta name="kb_doc_type" content="User Guide"/>
+  <meta name="title" content="3.1.1. Task 1: Install the F5 Splunk app in Splunk"/>
+  <meta name="product" content="F5 Analytics"/>
+  <meta name="version" content=""/>
+  <meta name="updated_date"  content="None"/>
+  <meta name="archived" content="Archived documents excluded"/>
+
+  
+  
+  
+  <link href="https://cdn.f5.com/favicon.ico" rel="icon">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text"> jQuery.noConflict(true)</script>
+
+</head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>3.1.1. Task 1: Install the F5 Splunk app in Splunk &#8212; F5 Analytics  documentation</title>
+    <link rel="stylesheet" href="../../_static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/f5_agility_theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/f5.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/f5-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/21fb8a09c3.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="3.2. Configuring the BIG-IP to send analytics data to Splunk" href="module2.html" />
+    <link rel="prev" title="3.1. Configuring Splunk to use the F5 Splunk app" href="module1.html" />
+  </head><body>
+  <div id="clouddocs-header"></div>
+
+    <div id="dismiss">
+      <button type="button" class="btn btn-info navbar-btn site-hidden"><i class="fa fa-align-justify"></i></button>
+    </div>
+    <div id="sidebar" class="section-nav">
+      <nav class="nav-sidebartoc">
+        <h5>F5 Analytics  documentation </h5>
+<div id="searchbox" role="search">
+  <form class="search" action="../../search.html" method="get">
+    <input type="text" class="search" name="q" placeholder=" Search..." />
+    <button type="submit" class="btn btn-info navbar-btn"><i class="fa fa-search"></i></button>
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        <hr>
+        <h5>Current Page</h5>
+        <span class="nav-sidebartoc">
+            <ul>
+<li><a class="reference internal" href="#">3.1.1. Task 1: Install the F5 Splunk app in Splunk</a></li>
+</ul>
+
+         </span>
+        <hr>
+        <h5>Site Contents</h5>
+        <span class="nav-sidebartoc">
+            <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lab1/lab1.html">2. Lab 1 - Introduction to AVR</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../lab2.html">3. Lab 2: Integration with Splunk</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="module1.html">3.1. Configuring Splunk to use the F5 Splunk app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module2.html">3.2. Configuring the BIG-IP to send analytics data to Splunk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module3.html">3.3. Notes on the F5/Splunk Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module4.html">3.4. Viewing the Analytics Data in Splunk</a></li>
+</ul>
+</li>
+</ul>
+
+        </span><!-- Use this file to add extra links to the bottom of the ToC sidebar -->
+<hr>
+  <span class="nav-sidebartoc">
+ <!-- insert content here -->
+  </span>
+      </nav>
+    </div>
+
+  
+  <div class="main active" id="content">
+    <article class="docs-container site-article-inner">
+            <nav class="site-breadcrumb-nav site-nav">
+          <ul class="site-breadcrumb-list">
+            <li class="breadcrumb-item"><button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn site-hidden"><i class="fa fa-align-justify"></i></button>&#x20 <a href="/">Community Training Classes &amp; Labs</a> &gt; <a href="../../index.html">F5 Analytics </a> &gt; 3.1.1. Task 1: Install the F5 Splunk app in Splunk</li>
+          </ul>
+      </nav>
+      
+      
+
+    
+  <div class="section" id="task-1-install-the-f5-splunk-app-in-splunk">
+<h1>3.1.1. Task 1: Install the F5 Splunk app in Splunk<a class="headerlink" href="#task-1-install-the-f5-splunk-app-in-splunk" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic">
+<li><p class="first">In the Chrome browser on your Windows jump box, click the bookmark for <strong>Splunk</strong>
+to launch the Splunk web UI</p>
+</li>
+<li><p class="first">On the Splunk Enterprise splash page, if you are prompted for an update, click
+<strong>Skip update</strong></p>
+</li>
+<li><p class="first">In the Splunk Web GUI, click on the settings button next to <strong>Apps</strong> (on the left)
+to <strong>Manage Apps</strong></p>
+<p><img alt="image14" src="../../_images/image14.png" /></p>
+</li>
+<li><p class="first">Click <strong>Install app from file</strong></p>
+<p><img alt="image15" src="../../_images/image15.png" /></p>
+</li>
+<li><p class="first">Click <strong>Choose File</strong></p>
+</li>
+<li><p class="first">In the file browser window, navigate to <strong>Desktop &gt; Analytics Lab Files,</strong> and
+choose the <strong>f5-networks-analytics-new_100.tgz file</strong> and click <strong>Open</strong></p>
+<p><img alt="image16" src="../../_images/image16.png" /></p>
+</li>
+<li><p class="first">Click <strong>Upload</strong></p>
+<p><img alt="image17" src="../../_images/image17.png" /></p>
+</li>
+<li><p class="first">Once the upload is complete, you should see the <strong>F5 Networks</strong> app listed in the
+Apps table, with the Status set to <strong>Enabled</strong></p>
+<p><img alt="image18" src="../../_images/image18.png" /></p>
+</li>
+<li><p class="first">Click the <strong>Splunk</strong> logo in the top-left to go to the start page. You should now
+see the <strong>F5 Networks</strong> app listed on the left</p>
+<p><img alt="image19" src="../../_images/image19.png" /></p>
+</li>
+<li><p class="first">Now click the <strong>Settings</strong> menu in the top-right, and choose <strong>Data inputs</strong></p>
+<p><img alt="image20" src="../../_images/image20.png" /></p>
+</li>
+<li><p class="first">Click on <strong>HTTP Event Collector</strong></p>
+<p><img alt="image21" src="../../_images/image21.png" /></p>
+</li>
+<li><p class="first">Click on <strong>Global Settings</strong> in the top-right</p>
+<p><img alt="image22" src="../../_images/image22.png" /></p>
+</li>
+<li><p class="first">In the Edit Global Settings window:</p>
+<ul class="simple">
+<li>Click on <strong>Enabled</strong> for <strong>All Tokens</strong></li>
+<li>Ensure that <strong>Enable SSL</strong> is checked</li>
+<li>Ensure that <strong>HTTP Port Number</strong> is set to <strong>8088</strong></li>
+<li>Click <strong>Save</strong></li>
+</ul>
+<p><img alt="image23" src="../../_images/image23.png" /></p>
+</li>
+<li><p class="first">Click <strong>New Token</strong> in the top-right</p>
+</li>
+<li><p class="first">For the Name, enter <strong>F5-Analytics</strong>, and then Click <strong>Next &gt;</strong> at the top</p>
+</li>
+<li><p class="first">On the <strong>Input Settings</strong> page, scroll down till you see <strong>Default Index</strong>,
+and then click the <strong>Create a new index</strong> link</p>
+<p><img alt="image24" src="../../_images/image24.png" /></p>
+</li>
+<li><p class="first">In the <strong>New Index</strong> window, enter <strong>f5-default</strong> for the <strong>Index Name</strong>, and click <strong>Save</strong></p>
+<p><img alt="image25" src="../../_images/image25.png" /></p>
+</li>
+<li><p class="first">In the <strong>Select Allowed Indexes</strong> table, click <strong>f5-default</strong> to move it to <strong>Selected item(s)</strong></p>
+<p><img alt="image26" src="../../_images/image26.png" /></p>
+</li>
+<li><p class="first">Click <strong>Review</strong> at the Top</p>
+<p><img alt="image27" src="../../_images/image27.png" /></p>
+</li>
+<li><p class="first">Ensure your settings match those shown in the screenshot below, then click <strong>Submit</strong></p>
+<p><img alt="image28" src="../../_images/image28.png" /></p>
+</li>
+<li><p class="first">Once your token has been created, highlight the <strong>Token Value</strong> for the newly created Token,
+and copy it to your clipboard (<strong>Ctrl-C</strong> or <strong>Right-click &gt; Copy</strong>). We will use this later.</p>
+<p><img alt="image29" src="../../_images/image29.png" /></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Your token value will be different from the one shown above</p>
+</div>
+</li>
+<li><p class="first">Click on the <strong>Splunk</strong> logo in the top-left to go back to the Splunk start page.</p>
+</li>
+</ol>
+</div>
+
+
+
+    
+     <div class="row next-prev-btn-row">
+       <div class="col-lg-12">
+       
+        <a href="module1.html" title="3.1. Configuring Splunk to use the F5 Splunk app" accesskey="p" class="btn btn-primary pull-left"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Previous</a>
+       
+       
+          <a href="module2.html" title="3.2. Configuring the BIG-IP to send analytics data to Splunk" accesskey="n" class="btn btn-primary pull-right">Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+       
+     </div>
+     </div>
+    
+
+    </article>
+  </div>
+
+</div>
+
+
+  <div id="clouddocs-footer"></div>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../../_static/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    jQuery.noConflict(true)
+  </script>
+  <script src="../../_static/js/clouddocs.js"></script>
+  </body>
+</html>
