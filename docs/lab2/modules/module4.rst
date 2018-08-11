@@ -4,6 +4,13 @@ Viewing the Analytics Data in Splunk
 Task 3: Visualize the analytics data in Splunk
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. NOTE:: 
+    It typically takes up to 10 minutes for the system to start showing data in Splunk 
+    after you have configured the BIG-IP to send data to it. Please ensure you have waited
+    at least 10 minutes after completing the previous task before you start viewing 
+    the data in Splunk.
+
+
 #. In your Chrome browser window, open a new tab, and click on the **Splunk** 
    bookmark to launch the Splunk Web UI
 
