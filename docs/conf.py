@@ -8,7 +8,7 @@
 classname = "F5 Analytics"
 
 # OPTIONAL: The URL to the GitHub Repository for this class
-github_repo = "https://github.com/f5devcentral/f5_analytics_labs"
+github_repo = "https://github.com/f5devcentral/f5-agility-labs-analytics"
 
 # OPTIONAL: Google Analytics
 # googleanalytics_id = 'UA-85156643-4'

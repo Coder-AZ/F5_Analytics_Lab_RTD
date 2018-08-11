@@ -61,6 +61,9 @@ Task 1: Install the F5 Splunk app in Splunk
 
    |image23|
 
+   .. NOTE:: 
+        Ensure that all of the above settings are exactly as shown, otherwise no data will show up in Splunk.
+
 #. Click **New Token** in the top-right
 
 #. For the Name, enter **F5-Analytics**, and then Click **Next >** at the top
